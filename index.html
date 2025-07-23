@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio de Branding: La Guía Definitiva</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Lora (Serif) & Inter (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* Estilo base para la fuente y la paleta de colores */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff; 
+            color: #111827;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Lora', serif;
+        }
+        /* Clases personalizadas para la estética */
+        .bg-dark { background-color: #111827; }
+        .bg-light { background-color: #f9fafb; }
+        .text-light { color: #f9fafb; }
+        .text-medium { color: #4b5563; }
+        .border-dark { border-color: #374151; }
+        .border-light { border-color: #e5e7eb; }
+        
+        /* Estilos para la barra de navegación activa */
+        .nav-link.active {
+            color: #111827;
+            font-weight: 600;
+        }
+        .nav-link.active::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #111827;
+            margin-top: 2px;
+            transition: width 0.3s;
+        }
+        
+        /* Estilos para los botones de los ejercicios */
+        .lab-btn.correct { background-color: #16a34a; color: white; border-color: #16a34a; }
+        .lab-btn.incorrect { background-color: #dc2626; color: white; border-color: #dc2626; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- ========== HEADER / NAVEGACIÓN FIJA ========== -->
+    <header class="bg-white/90 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 border-b border-light">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex items-center justify-between">
+                <a href="#" class="font-serif text-xl font-bold tracking-tight text-gray-900">Branding Lab</a>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="#strategy" class="nav-link text-medium hover:text-gray-900 transition-colors duration-300">Estrategia</a>
+                    <a href="#week5-6" class="nav-link text-medium hover:text-gray-900 transition-colors duration-300">Diseño de Logos</a>
+                    <a href="#week7-8" class="nav-link text-medium hover:text-gray-900 transition-colors duration-300">Sistemas de Identidad</a>
+                    <a href="#week9-10" class="nav-link text-medium hover:text-gray-900 transition-colors duration-300">Gestión de Marca</a>
+                    <a href="#practice" class="nav-link text-medium hover:text-gray-900 transition-colors duration-300">Laboratorio</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== SECCIÓN HERO ========== -->
+        <section class="py-24 sm:py-32 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-right">
+                        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 leading-tight">
+                            El Proceso del Branding
+                        </h1>
+                        <p class="mt-6 text-lg text-medium">
+                            Una guía estructurada y práctica para transformar ideas en marcas memorables, desde el primer boceto hasta un sistema de identidad completo.
+                        </p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="Equipo de creativos colaborando en un proyecto de branding" class="rounded-xl shadow-2xl w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== MÓDULO 0: FILOSOFÍA Y ESTRATEGIA DE MARCA ========== -->
+        <section id="strategy" class="py-20 sm:py-24 bg-light border-y border-light">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 data-aos="fade-up" class="text-4xl font-bold tracking-tight font-serif">Filosofía y Estrategia de Marca</h2>
+                    <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-lg text-medium max-w-3xl mx-auto">Antes del primer pixel, está la gran idea. El branding exitoso se fundamenta en una estrategia sólida y una comprensión profunda de la psicología humana.</p>
+                </div>
+                <div class="space-y-16">
+                    <div>
+                        <h3 class="font-serif text-3xl font-semibold mb-6 text-center" data-aos="fade-up">¿Qué es una Marca? Más allá del Logo</h3>
+                        <p class="text-medium text-center max-w-3xl mx-auto" data-aos="fade-up">Una marca no es un logo, un producto o un nombre. Es una **percepción visceral** que una persona tiene sobre un producto, servicio u organización. Es la suma de todas las experiencias e interacciones. El branding es el proceso deliberado de **dar forma a esa percepción**.</p>
+                    </div>
+                    <div data-aos="fade-up">
+                        <h3 class="font-serif text-3xl font-semibold mb-8 text-center">Los 12 Arquetipos de Marca</h3>
+                        <p class="text-medium text-center max-w-3xl mx-auto mb-10">Basados en la teoría de Carl Jung, los arquetipos son personalidades universales que nos ayudan a entender y conectar con las marcas a un nivel subconsciente. Definir un arquetipo le da a la marca una voz y una personalidad consistentes.</p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
+                            <div class="bg-white p-4 rounded-lg border border-light"><h4 class="font-semibold">El Inocente</h4><p class="text-xs text-medium">Seguridad, felicidad</p></div>
+                            <div class="bg-white p-4 rounded-lg border border-light"><h4 class="font-semibold">El Explorador</h4><p class="text-xs text-medium">Libertad, aventura</p></div>
+                            <div class="bg-white p-4 rounded-lg border border-light"><h4 class="font-semibold">El Sabio</h4><p class="text-xs text-medium">Conocimiento, verdad</p></div>
+                            <div class="bg-white p-4 rounded-lg border border-light"><h4 class="font-semibold">El Héroe</h4><p class="text-xs text-medium">Maestría, valentía</p></div>
+                            <div class="bg-white p-4 rounded-lg border border-light"><h4 class="font-semibold">El Forajido</h4><p class="text-xs text-medium">Revolución, disrupción</p></div>
+                            <div class="bg-white p-4 rounded-lg border border-light"><h4 class="font-semibold">El Mago</h4><p class="text-xs text-medium">Poder, transformación</p></div>
+                            <div class="bg-white p-4 rounded-lg border border-light"><h4 class="font-semibold">El Amante</h4><p class="text-xs text-medium">Intimidad, pasión</p></div>
+                            <div class="bg-white p-4 rounded-lg border border-light"><h4 class="font-semibold">El Bufón</h4><p class="text-xs text-medium">Alegría, humor</p></div>
+                            <div class="bg-white p-4 rounded-lg border border-light"><h4 class="font-semibold">El Hombre Corriente</h4><p class="text-xs text-medium">Pertenencia, realismo</p></div>
+                            <div class="bg-white p-4 rounded-lg border border-light"><h4 class="font-semibold">El Cuidador</h4><p class="text-xs text-medium">Servicio, compasión</p></div>
+                            <div class="bg-white p-4 rounded-lg border border-light"><h4 class="font-semibold">El Creador</h4><p class="text-xs text-medium">Innovación, imaginación</p></div>
+                            <div class="bg-white p-4 rounded-lg border border-light"><h4 class="font-semibold">El Gobernante</h4><p class="text-xs text-medium">Control, liderazgo</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== MÓDULO 1 (Semana 5-6): DISEÑO DE LOGOTIPOS ========== -->
+        <section id="week5-6" class="py-20 sm:py-24 bg-white border-y border-light">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-sm font-bold tracking-wider text-blue-600">SEMANAS 5-6</span>
+                    <h2 data-aos="fade-up" class="text-4xl font-bold tracking-tight font-serif mt-2">Diseño de Logotipos: El Corazón de la Identidad</h2>
+                    <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-lg text-medium max-w-3xl mx-auto">En esta fase intensiva, nos enfocamos en el proceso creativo y el desarrollo conceptual para crear un logotipo que sea la piedra angular de la marca.</p>
+                </div>
+
+                <div class="space-y-20">
+                    <!-- Paso 1: Briefing y Research -->
+                    <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
+                        <div class="order-2 md:order-1"><h3 class="font-serif text-3xl font-semibold mb-4">1. Briefing y Research</h3><p class="text-medium">No se puede diseñar en el vacío. Esta fase es 90% escuchar y 10% preguntar. El objetivo es entender el ADN de la empresa: su misión, visión, valores, público objetivo y competencia. Un buen research evita clichés y revela oportunidades únicas de posicionamiento.</p></div>
+                        <div class="order-1 md:order-2"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" alt="Análisis de competencia en una pizarra" class="rounded-lg shadow-xl"></div>
+                    </div>
+                    <div class="bg-light p-8 rounded-lg border border-light" data-aos="fade-up">
+                        <h4 class="font-semibold text-xl mb-3">Tarea Práctica: El Brief Creativo</h4>
+                        <p class="text-medium">Elige una empresa ficticia (ej. "una cafetería sostenible", "una app de fitness"). Responde a estas preguntas para crear tu propio brief: ¿Quiénes son? ¿Qué hacen? ¿Por qué lo hacen? ¿Quién es su público? ¿Quiénes son sus 3 principales competidores? ¿Qué 3 adjetivos deben describir a la marca? ¿Cuál sería su arquetipo principal?</p>
+                    </div>
+
+                    <!-- Paso 2: Moodboard y Sketching -->
+                    <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
+                        <div><img src="https://images.unsplash.com/photo-1522120691812-dcdfb625f397?q=80&w=2070&auto=format&fit=crop" alt="Moodboard con paletas de color, texturas y fotos" class="rounded-lg shadow-xl"></div>
+                        <div><h3 class="font-serif text-3xl font-semibold mb-4">2. Moodboard y Sketching</h3><p class="text-medium">Con el brief como guía, se crea un moodboard para definir la dirección visual. Luego, comienza la exploración manual. La regla de los **50 bocetos diarios** no es sobre perfección, es sobre cantidad. Fuerza a tu cerebro a ir más allá de las primeras ideas (las más obvias) y a encontrar soluciones verdaderamente originales.</p></div>
+                    </div>
+                     <div class="bg-light p-8 rounded-lg border border-light" data-aos="fade-up">
+                        <h4 class="font-semibold text-xl mb-3">Tarea Práctica: Del Boceto al Concepto</h4>
+                        <p class="text-medium mb-4">Dedica 1-2 horas al día durante una semana al sketching. No uses goma de borrar. Simplemente explora formas, letras y símbolos. Al final de la semana, selecciona tus 3-5 bocetos más fuertes. ¿Por qué son los mejores? ¿Qué comunican?</p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1964&auto=format&fit=crop" class="rounded-md h-48 w-full object-cover" alt="Bocetos iniciales a lápiz">
+                            <img src="https://images.unsplash.com/photo-1600649952097-a76b9210ea34?q=80&w=1974&auto=format&fit=crop" class="rounded-md h-48 w-full object-cover" alt="Bocetos intermedios con más detalle">
+                            <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=2070&auto=format&fit=crop" class="rounded-md h-48 w-full object-cover" alt="Bocetos avanzados explorando variaciones de color">
+                            <img src="https://images.unsplash.com/photo-1558655146-364adaf1fcc9?q=80&w=1974&auto=format&fit=crop" class="rounded-md h-48 w-full object-cover" alt="Conceptos finales seleccionados y coloreados">
+                        </div>
+                    </div>
+
+                    <!-- Paso 3: Refinamiento y Tipografía -->
+                    <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
+                        <div class="order-2 md:order-1"><h3 class="font-serif text-3xl font-semibold mb-4">3. Refinamiento y Tipografía</h3><p class="text-medium">Los conceptos más prometedores se digitalizan. Aquí se trabaja la precisión vectorial, el equilibrio y el espaciado negativo. Paralelamente, se selecciona la **tipografía corporativa**. Esta no es una elección trivial; la tipografía es una parte fundamental de la personalidad de la marca. A veces, se personalizan letras (glifos) para crear un wordmark único.</p></div>
+                        <div class="order-1 md:order-2"><img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2071&auto=format&fit=crop" alt="Diseñador trabajando en un logotipo en un software de diseño" class="rounded-lg shadow-xl"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ========== MÓDULO 2 (Semana 7-8): SISTEMAS DE IDENTIDAD ========== -->
+        <section id="week7-8" class="py-20 sm:py-24 bg-light border-y border-light">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-sm font-bold tracking-wider text-blue-600">SEMANAS 7-8</span>
+                    <h2 data-aos="fade-up" class="text-4xl font-bold tracking-tight font-serif mt-2">Sistemas de Identidad: Del Logo a la Marca</h2>
+                    <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-lg text-medium max-w-3xl mx-auto">Un logo es solo el comienzo. Un sistema de identidad robusto asegura que la marca se exprese de manera coherente y reconocible en todos los puntos de contacto.</p>
+                </div>
+                <div class="space-y-20">
+                    <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
+                        <div><h3 class="font-serif text-3xl font-semibold mb-4">Manual de Identidad Básico</h3><p class="text-medium">Es el documento sagrado de la marca. Define las reglas de uso del logotipo, la paleta de colores (primarios, secundarios, neutros), la tipografía corporativa y el tono de voz. Herramientas como **Adobe InDesign** son ideales para maquetar estos manuales de forma profesional.</p></div>
+                        <div><img src="https://images.unsplash.com/photo-1614036855322-c3f3b3c3f1a8?q=80&w=2070&auto=format&fit=crop" alt="Páginas de un manual de identidad de marca" class="rounded-lg shadow-xl"></div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
+                        <div class="order-2 md:order-1"><h3 class="font-serif text-3xl font-semibold mb-4">Aplicaciones y Mockups</h3><p class="text-medium">Para que el cliente (y tú mismo) pueda visualizar la marca en el mundo real, es crucial crear mockups. Esto incluye papelería corporativa (tarjetas de visita, hojas membretadas) y aplicaciones digitales (perfiles de redes sociales, diseño de una web). Los mockups profesionales no solo se ven bien, sino que validan la versatilidad del sistema de identidad.</p></div>
+                        <div class="order-1 md:order-2"><img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=2070&auto=format&fit=crop" alt="Mockup de una marca en una tarjeta de visita y un teléfono" class="rounded-lg shadow-xl"></div>
+                    </div>
+                     <div class="bg-white p-8 rounded-lg border border-light" data-aos="fade-up">
+                        <h4 class="font-semibold text-xl mb-3">Tarea Práctica: Construye el Sistema</h4>
+                        <p class="text-medium">Toma el logo que refinaste en la fase anterior y construye su sistema. Define una paleta de 2 colores primarios y 2 neutros. Elige una tipografía para títulos y otra para cuerpo de texto. Define 2-3 reglas de uso del logo (ej. "mantener siempre la proporción"). Luego, crea 3 mockups: una tarjeta de visita, un post de Instagram y la cabecera de un sitio web.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== NUEVO MÓDULO 3 (Semana 9-10): GESTIÓN Y APLICACIÓN DE LA MARCA ========== -->
+        <section id="week9-10" class="py-20 sm:py-24 bg-white border-y border-light">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-sm font-bold tracking-wider text-blue-600">SEMANAS 9-10</span>
+                    <h2 data-aos="fade-up" class="text-4xl font-bold tracking-tight font-serif mt-2">Gestión y Aplicación de la Marca</h2>
+                    <p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-lg text-medium max-w-3xl mx-auto">Crear la marca es solo la mitad del trabajo. Mantenerla coherente y relevante a lo largo del tiempo es el verdadero desafío.</p>
+                </div>
+                <div class="space-y-20">
+                    <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
+                        <div class="order-2 md:order-1"><h3 class="font-serif text-3xl font-semibold mb-4">Puntos de Contacto (Touchpoints)</h3><p class="text-medium">Un punto de contacto es cualquier interacción que un cliente tiene con tu marca. Desde tu sitio web y redes sociales, hasta el empaque de tu producto y el email de atención al cliente. La consistencia en cada uno de estos puntos es lo que construye una percepción de marca sólida y confiable.</p></div>
+                        <div class="order-1 md:order-2"><img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop" alt="Una persona interactuando con una marca en múltiples dispositivos" class="rounded-lg shadow-xl"></div>
+                    </div>
+                    <div class="bg-light p-8 rounded-lg border border-light" data-aos="fade-up">
+                        <h4 class="font-semibold text-xl mb-3">Tarea Práctica: Mapea los Touchpoints</h4>
+                        <p class="text-medium">Para tu marca ficticia, haz una lista de al menos 10 puntos de contacto donde un cliente podría interactuar con ella. Agrupalos por fases: Descubrimiento (ej. anuncio en Instagram), Consideración (ej. visita a la web), Compra (ej. email de confirmación) y Lealtad (ej. newsletter).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== MÓDULO 4: LABORATORIO INTERACTIVO ========== -->
+        <section id="practice" class="py-20 sm:py-24 bg-light">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16"><h2 data-aos="fade-up" class="text-4xl font-bold tracking-tight font-serif">Laboratorio de Branding</h2><p data-aos="fade-up" data-aos-delay="100" class="mt-3 text-lg text-medium max-w-2xl mx-auto">Pon a prueba tu intuición y conocimiento sobre la creación de marcas.</p></div>
+                <div class="space-y-16 max-w-4xl mx-auto">
+                    <!-- Ejercicio 1: Análisis de Logo -->
+                    <div class="bg-white p-8 sm:p-12 rounded-xl border border-light" data-aos="fade-up">
+                        <h3 class="font-serif text-2xl font-bold mb-2">Análisis de Arquetipo de Logo</h3>
+                        <p class="text-medium mb-8">Observa el siguiente logo ficticio. ¿Qué arquetipo de marca crees que representa mejor?</p>
+                        <div class="flex justify-center mb-6"><img src="https://placehold.co/200x200/111827/ffffff?text=LUX" alt="Logo ficticio para análisis" class="rounded-full h-32 w-32 object-cover"></div>
+                        <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4" id="logo-choices">
+                            <button class="lab-btn bg-white border border-light py-2 px-4 rounded-md hover:bg-dark hover:text-light transition-colors" onclick="checkLogo(true, this)">Lujo / Exclusividad</button>
+                            <button class="lab-btn bg-white border border-light py-2 px-4 rounded-md hover:bg-dark hover:text-light transition-colors" onclick="checkLogo(false, this)">Aventura / Rudeza</button>
+                            <button class="lab-btn bg-white border border-light py-2 px-4 rounded-md hover:bg-dark hover:text-light transition-colors" onclick="checkLogo(false, this)">Amistad / Cercanía</button>
+                            <button class="lab-btn bg-white border border-light py-2 px-4 rounded-md hover:bg-dark hover:text-light transition-colors" onclick="checkLogo(false, this)">Innovación / Tecnología</button>
+                        </div>
+                        <p id="logo-result" class="mt-4 font-medium text-center h-6"></p>
+                    </div>
+
+                    <!-- Ejercicio 2: Selección de Tipografía -->
+                    <div class="bg-white p-8 sm:p-12 rounded-xl border border-light" data-aos="fade-up">
+                        <h3 class="font-serif text-2xl font-bold mb-2">Selección de Tipografía</h3>
+                        <p class="text-medium mb-8">Una nueva marca de café artesanal busca una tipografía para su empaque. Quieren comunicar "tradición, calidad y un toque personal". ¿Cuál de estas fuentes elegirías?</p>
+                        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6" id="typo-choices">
+                            <button class="lab-btn text-left bg-white border border-light p-4 rounded-md hover:bg-dark hover:text-light transition-colors" onclick="checkTypo(true, this)"><span class="font-serif text-2xl">El Cafetal</span><span class="block text-sm">Fuente Serif - Elegante, Clásica</span></button>
+                            <button class="lab-btn text-left bg-white border border-light p-4 rounded-md hover:bg-dark hover:text-light transition-colors" onclick="checkTypo(false, this)"><span class="font-mono text-2xl">CAFE_TECH</span><span class="block text-sm">Fuente Monospace - Moderna, Técnica</span></button>
+                        </div>
+                        <p id="typo-result" class="mt-4 font-medium text-center h-6"></p>
+                    </div>
+
+                    <!-- Ejercicio 3: Psicología del Color -->
+                    <div class="bg-white p-8 sm:p-12 rounded-xl border border-light" data-aos="fade-up">
+                        <h3 class="font-serif text-2xl font-bold mb-2">Psicología del Color</h3>
+                        <p class="text-medium mb-8">Una app de meditación y bienestar quiere elegir su color primario para inspirar calma, confianza y crecimiento. ¿Cuál es la mejor opción?</p>
+                        <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4" id="color-choices">
+                            <button class="lab-btn h-24 rounded-md border border-light transition-transform hover:scale-105" style="background-color: #ef4444;" onclick="checkColor(false, this)"></button>
+                            <button class="lab-btn h-24 rounded-md border border-light transition-transform hover:scale-105" style="background-color: #22c55e;" onclick="checkColor(true, this)"></button>
+                            <button class="lab-btn h-24 rounded-md border border-light transition-transform hover:scale-105" style="background-color: #f97316;" onclick="checkColor(false, this)"></button>
+                            <button class="lab-btn h-24 rounded-md border border-light transition-transform hover:scale-105" style="background-color: #eab308;" onclick="checkColor(false, this)"></button>
+                        </div>
+                        <p id="color-result" class="mt-4 font-medium text-center h-6"></p>
+                    </div>
+
+                    <!-- Ejercicio 4: Análisis de Voz de Marca -->
+                    <div class="bg-white p-8 sm:p-12 rounded-xl border border-light" data-aos="fade-up">
+                        <h3 class="font-serif text-2xl font-bold mb-2">Análisis de Voz de Marca</h3>
+                        <p class="text-medium mb-8">Una marca de ropa de aventura (Arquetipo: El Explorador) necesita un texto para un email. ¿Cuál de las siguientes opciones se alinea mejor con su voz?</p>
+                        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6" id="voice-choices">
+                            <button class="lab-btn text-left bg-white border border-light p-4 rounded-md hover:bg-dark hover:text-light transition-colors" onclick="checkVoice(false, this)"><h4 class="font-semibold">Opción A</h4><p class="text-sm mt-1">"Estimado cliente, nos complace informarle de nuestra nueva colección de temporada. Esperamos que sea de su agrado."</p></button>
+                            <button class="lab-btn text-left bg-white border border-light p-4 rounded-md hover:bg-dark hover:text-light transition-colors" onclick="checkVoice(true, this)"><h4 class="font-semibold">Opción B</h4><p class="text-sm mt-1">"El próximo desafío te espera. Equípate para la aventura con nuestra nueva colección, diseñada para llegar más lejos."</p></button>
+                        </div>
+                        <p id="voice-result" class="mt-4 font-medium text-center h-6"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light"><div class="container mx-auto px-6 py-12 text-center"><p class="font-serif text-lg font-semibold">Branding Lab</p><p class="mt-2 text-sm text-gray-400">&copy; 2025. Creado para forjar marcas que dejan huella.</p></div></footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({ duration: 700, once: true, offset: 50 });
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('main > section[id]');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 80) { current = section.getAttribute('id'); }
+                });
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) { link.classList.add('active'); }
+                });
+            });
+        });
+
+        function disableButtons(containerId) {
+            document.querySelectorAll(`#${containerId} .lab-btn`).forEach(b => {
+                b.disabled = true;
+                b.classList.remove('hover:bg-dark', 'hover:text-light', 'hover:scale-105');
+            });
+        }
+
+        function checkLogo(isCorrect, btn) {
+            disableButtons('logo-choices');
+            const resultEl = document.getElementById('logo-result');
+            if (isCorrect) {
+                btn.classList.add('correct');
+                resultEl.textContent = '¡Correcto! El negro, la tipografía serif y la simplicidad evocan lujo.';
+                resultEl.className = 'mt-4 font-medium text-center h-6 text-green-600';
+            } else {
+                btn.classList.add('incorrect');
+                resultEl.textContent = 'Inténtalo de nuevo. Piensa en la simpleza y el color.';
+                resultEl.className = 'mt-4 font-medium text-center h-6 text-red-600';
+            }
+        }
+
+        function checkTypo(isCorrect, btn) {
+            disableButtons('typo-choices');
+            const resultEl = document.getElementById('typo-result');
+            if (isCorrect) {
+                btn.classList.add('correct');
+                resultEl.textContent = '¡Excelente elección! La fuente Serif conecta con la tradición y la calidad artesanal.';
+                resultEl.className = 'mt-4 font-medium text-center h-6 text-green-600';
+            } else {
+                btn.classList.add('incorrect');
+                resultEl.textContent = 'No es la ideal. La fuente Monospace se siente demasiado técnica y fría para un café.';
+                resultEl.className = 'mt-4 font-medium text-center h-6 text-red-600';
+            }
+        }
+
+        function checkColor(isCorrect, btn) {
+            disableButtons('color-choices');
+            const resultEl = document.getElementById('color-result');
+            if (isCorrect) {
+                btn.classList.add('correct');
+                resultEl.textContent = '¡Perfecto! El verde se asocia con la naturaleza, el crecimiento y la calma.';
+                resultEl.className = 'mt-4 font-medium text-center h-6 text-green-600';
+            } else {
+                btn.classList.add('incorrect');
+                resultEl.textContent = 'No es la mejor opción. El rojo o naranja pueden generar alerta o demasiada energía.';
+                resultEl.className = 'mt-4 font-medium text-center h-6 text-red-600';
+            }
+        }
+
+        function checkVoice(isCorrect, btn) {
+            disableButtons('voice-choices');
+            const resultEl = document.getElementById('voice-result');
+            if (isCorrect) {
+                btn.classList.add('correct');
+                resultEl.textContent = '¡Correcto! La opción B es activa, inspiradora y se alinea con "El Explorador".';
+                resultEl.className = 'mt-4 font-medium text-center h-6 text-green-600';
+            } else {
+                btn.classList.add('incorrect');
+                resultEl.textContent = 'No es la ideal. La opción A es demasiado formal y pasiva para una marca de aventura.';
+                resultEl.className = 'mt-4 font-medium text-center h-6 text-red-600';
+            }
+        }
+    </script>
+</body>
+</html>
